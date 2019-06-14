@@ -10,6 +10,7 @@
 
 @interface QZLicensePlateView : UIView
 
+//传递车牌号的block
 @property (nonatomic, copy) void(^sendTextBlock)(NSString *);
 
 + (instancetype)initFrame:(CGRect)frame block:(void(^)(NSString *))block;
